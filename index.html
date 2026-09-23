@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Where San Antonio bicyclists are being killed and seriously injured</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3wJmUe0W2Tqj9C4R8f6uJQ0M0uYl0=" crossorigin="" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="scrolly" aria-label="Crash map and corridor walkthrough">
+        <div class="sticky-map-wrap">
+          <div id="map" role="img" aria-label="Map of San Antonio bicyclist crashes"></div>
+          <div class="map-status" id="map-status">Loading map data…</div>
+          <div class="legend">
+            <div><span class="dot death"></span> Death</div>
+            <div><span class="dot injury"></span> Suspected serious injury</div>
+            <div><span class="line-swatch"></span> Candidate crash stretch</div>
+          </div>
+        </div>
+          <div id="steps" class="steps"></div>
+      </section>
+
+      <div class="load-error-wrap"><div id="load-error" class="load-error" hidden></div></div>
+
+      <section class="prose methodology">
+        <h2>About the data</h2>
+        <p>The analysis uses Texas Department of Transportation CRIS records for people identified as pedalcyclists with a fatal injury or suspected serious injury in San Antonio crashes. Two qualifying crashes had no usable coordinates and therefore are included in the totals but not shown as map points.</p>
+        <p>The candidate stretches are an exploratory analysis of repeat crashes matched to local street segments. They are not an official City of San Antonio ranking or designation.</p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+  </body>
+</html>
