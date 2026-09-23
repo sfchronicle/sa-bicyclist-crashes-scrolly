@@ -1,6 +1,6 @@
 # San Antonio bicyclist crashes scrolly
 
-This is the standalone static build for the San Antonio bicyclist-crash project. It is intentionally separate from the analysis repository and does not depend on a Google Doc, Gatsby service account or the pedestrian-map repo. It is a simple map scrolly: an overview, followed by nine zoomed-in repeat-crash stretches.
+This is the standalone static build for the San Antonio bicyclist-crash project
 
 ## Data contract
 
